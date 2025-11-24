@@ -57,6 +57,13 @@
       font-weight: 600;
     }
 
+    h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+      color: #ffe4e6;
+      font-weight: 600;
+    }
+
     .tag {
       display: inline-block;
       padding: 0.2rem 0.6rem;
@@ -67,6 +74,10 @@
       margin-bottom: 0.25rem;
       color: #fda4af;
       background: rgba(225, 29, 72, 0.1);
+    }
+
+    ul {
+      padding-left: 1.2rem;
     }
 
     a {
@@ -84,7 +95,6 @@
       color: #a1a1aa;
     }
 
-    /* PROJECT GRID */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -92,7 +102,6 @@
       margin-top: 1.2rem;
     }
 
-    /* PROJECT CARD */
     .project-card {
       background: #111;
       border: 1px solid #3f0d16;
@@ -110,12 +119,10 @@
       box-shadow: 0 15px 40px rgba(225, 29, 72, 0.35);
     }
 
-    /* ICON STYLE */
     .icon {
       margin-right: 6px;
     }
 
-    /* PROJECT LINK BUTTON */
     .project-link {
       display: inline-block;
       margin-top: 0.6rem;
@@ -129,9 +136,9 @@
 
     .project-link:hover {
       background: rgba(225, 29, 72, 0.15);
+      text-decoration: none;
     }
 
-    /* UPDATE TAG */
     .update-tag {
       display: block;
       margin-top: 0.5rem;
@@ -139,7 +146,6 @@
       color: #a1a1aa;
     }
 
-    /* FADE-IN ANIMATION */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(12px); }
       to { opacity: 1; transform: translateY(0); }
@@ -150,15 +156,19 @@
 <body>
   <header>
     <h1>𝐒𝐞𝐛𝐚𝐬𝐭𝐢𝐚𝐧 𝐇𝐞𝐫𝐧𝐚𝐧𝐝𝐞𝐳</h1>
-    <img src="MagicEraser_251117_025218.png" alt="Sebastian Hernandez" style="
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top: 1rem;
-      border: 3px solid #e11d48;
-      box-shadow: 0 10px 25px rgba(225, 29, 72, 0.25);
-    ">
+    <img 
+      src="MagicEraser_251117_025218.png" 
+      alt="Sebastian Hernandez" 
+      style="
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 1rem;
+        border: 3px solid #e11d48;
+        box-shadow: 0 10px 25px rgba(225, 29, 72, 0.25);
+      "
+    >
     <p>Aspiring Computer Science Student · Interested in AI & Software Development</p>
     <p>Massachusetts · Independent Student</p>
   </header>
@@ -170,9 +180,9 @@
       <p>
         I grew up in Colombia and moved to Massachusetts as a child. I study independently while working 
         part time and keeping a clear focus on long term goals. My grades rose in my junior and senior years
-        as I took harder AP coursework, including calculus, language, and app development. 
-        I am fluent in English and Spanish. I work on web development and AI projects weekly,
-        and my plan is to major in Computer Science with a focus on AI.
+        as I took harder courses in advanced placement classes like calculus, language, social studies, along with App development. 
+        I am strongly proficient in both English and Spanish. I work on personal projects in web development and artificial intelligence and I study new skills every week.
+        My plan is to pursue Computer Science with a focus on artificial intelligence to create tools that improve daily life for students.
       </p>
     </section>
 
@@ -198,39 +208,53 @@
       </p>
 
       <div class="project-grid">
-
         <div class="project-card">
           <h3><span class="icon">🌐</span> Portfolio Website</h3>
-          <p>The portfolio you are viewing now — designed and built using HTML and CSS. Updated regularly as I learn more.</p>
+          <p>
+            The site you are viewing now — designed and built using HTML and CSS, hosted through GitHub Pages. 
+            This portfolio will continue to grow with new projects throughout the year.
+          </p>
+          <a href="https://sebastianred.org" target="_blank" class="project-link">Open Project →</a>
           <span class="update-tag">Last Updated: 2025</span>
         </div>
 
         <div class="project-card">
           <h3><span class="icon">💰</span> Budget Tracker App</h3>
-          <p>A web app built with HTML, CSS, and JavaScript allowing users to track expenses with category totals and persistent local storage.</p>
+          <p>
+            A web app built with HTML, CSS, and JavaScript to track expenses, categorize spending, and view monthly totals. 
+            Data is stored locally so it persists between sessions.
+          </p>
           <a href="https://sebastianred.org/budget-tracker" target="_blank" class="project-link">Open Project →</a>
           <span class="update-tag">Updated Weekly</span>
         </div>
 
         <div class="project-card">
           <h3><span class="icon">📊</span> Grade Estimator App</h3>
-          <p>A tool that allows students to calculate estimated course grades using categories, weights, and predicted scores.</p>
+          <p>
+            A tool that calculates estimated course grades using assignment weights, categories, and predicted scores. 
+            Designed with clear UI and interactive logic.
+          </p>
           <a href="https://sebastianred.org/grade-estimator" target="_blank" class="project-link">Open Project →</a>
           <span class="update-tag">Updated Weekly</span>
         </div>
 
         <div class="project-card">
           <h3><span class="icon">🏆</span> DPS Coders Contest</h3>
-          <p>Currently competing in the DPS Coders programming contest, strengthening my problem-solving and clean-code skills.</p>
+          <p>
+            Currently competing in the DPS Coders programming contest. This experience challenges my problem-solving, 
+            efficiency, and ability to write clean code under timed conditions.
+          </p>
           <span class="update-tag">Active</span>
         </div>
 
         <div class="project-card">
           <h3><span class="icon">📱</span> App Development Coursework</h3>
-          <p>Various apps created through my high school App Development class, focusing on UI design and basic software architecture.</p>
+          <p>
+            Developing small applications through my high school App Development class. 
+            These projects include working with interfaces, basic logic, and learning how to structure simple applications.
+          </p>
           <span class="update-tag">2024–2025</span>
         </div>
-
       </div>
     </section>
 
@@ -239,12 +263,14 @@
       <ul>
         <li>
           <strong>Student Guitar Teacher — High School Program</strong><br>
-          Led daily 1h15m beginner guitar lessons for a full year. Gained strong communication and teaching skills.
+          Led daily 1h15m beginner lessons for a full year. Developed communication, patience,
+          and teaching skills while mentoring students with different learning styles.
         </li>
         <br>
         <li>
           <strong>Food Runner · Restaurant</strong><br>
-          Manage part-time work while supporting myself independently. Learned teamwork, responsibility, and time management.
+          Manage part-time work while supporting myself independently.
+          Learned teamwork, time management, and staying calm under pressure.
         </li>
       </ul>
     </section>
